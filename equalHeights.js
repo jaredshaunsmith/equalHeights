@@ -35,7 +35,7 @@ app.EqualHeights = (function($, _, app) {
 
 	var init = function() {
 		this.bind();
-		this.measure(false);
+		this.measure();
 	};
 
 	def.prototype = {
