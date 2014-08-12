@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en-US" dir="ltr"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en-US" dir="ltr"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en-US" dir="ltr"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en-US" dir="ltr"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US" dir="ltr"> <!--<![endif]-->
+<head>
+    <title>equal heights</title>
+    <meta name="description" content="" />
+    <meta name="author"      content="" />
+    <meta name="viewport"    content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- font loading -->
+
+    
+    <style>
+    	* {box-sizing: border-box; font-family: arial;}
+    	span, p, div, h2, h3, h4 {margin-bottom: 20px; line-height: 28px;}
+    	.wrapper {width: 1080px;}
+    	.row-3 {width: 100% ;}
+    	.row-item {width: 33.3333%; float: left;}
+    	.row-item:last-child {margin-right: 0px;}
+    	.block {padding: 20px; position: relative; margin: 0px 20px;}
+    	.background-grey {background: lightgrey;}
+    	.font-color-fifty-grey: {color: grey;}
+    	.block-title {font-weight: bold;}
+    </style>
+</head>
+
+<body >
+
+	<div class="wrapper row-3 equal-height-group">
+		<div class="row-item">
+			<div class="block background-grey equal-height-item">
+				<span class="block-title font-color-fifty-grey">
+					lorem ipsum dollor conset amet dolor sit amet rolo de picok
+				</span>
+
+				<h3 class="h3 reset-vertical">Lorem Dollor Amet Consectetur Con Sec Do</h3>
+				<h4>Ipsum pipsum</h4>
+
+				<p>Elit Thundercats tousled, mollit enim squid jean shorts Helvetica asymmetrical chambray. Brunch shabby chic chillwave sustainable, art party veniam farm-to-table McSweeney's butcher whatever sartorial odio deep v.</p>
+			</div>
+		</div>
+		<div class="row-item">
+			<div class="block background-grey equal-height-item">
+				<span class="block-title font-color-fifty-grey">
+					lorem ipsum dollor conset amet dolor sit amet rolo de picok
+				</span>
+
+				<h3 class="h3 reset-vertical">Lorem Amet Dollor Con Sec Do</h3>
+				<h4>Ipsum woooo!</h4>
+
+				<p>McSweeney's butcher whatever sartorial odio deep v. Before they sold out ennui blog trust fund anim tattooed. Skateboard wayfarers literally aesthetic vegan stumptown roof party. Incididunt aliqua exercitation chia, food truck quinoa Blue Bottle you probably haven't heard of them pariatur placeat. Ut fashion axe organic forage, Tumblr iPhone locavore cred viral semiotics keffiyeh culpa skateboard Portland.</p>
+			</div>
+		</div>
+		<div class="row-item">
+			<div class="block background-grey equal-height-item">
+				<span class="block-title font-color-fifty-grey">
+					lorem ipsum dollor conset amet dolor sit amet rolo de picok
+				</span>
+
+				<h3 class="h3">Lorem Dollor Con Sec Dollor Sit Amet Consectetur</h3>
+
+				<p>Elit Thundercats tousled, mollit enim squid jean shorts Helvetica asymmetrical chambray. Brunch shabby chic chillwave sustainable, art party veniam farm-to-table McSweeney's butcher whatever sartorial odio deep v. Before they sold out ennui blog trust fund anim tattooed. Skateboard wayfarers literally aesthetic vegan stumptown roof party. Incididunt aliqua exercitation chia, food truck quinoa Blue Bottle you probably haven't heard of them pariatur placeat. Ut fashion axe organic forage, Tumblr iPhone locavore cred viral semiotics keffiyeh culpa skateboard Portland.</p>
+			</div>
+		</div>
+	</div>
+	 <script type="text/javascript">
+	    var app = (function() {
+			var defaults = [];
+			return { 
+
+			}
+		})();
+	</script>
+	
+	<!-- include $ and _ -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+	
+	<script type="text/javascript" src="equalHeights.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('.equal-height-group').each(function() {
+				$(this).data(new app.EqualHeights($(this), {'cutoff': 640}));
+			});
+		});
+    </script>
+</body>
+</html>
